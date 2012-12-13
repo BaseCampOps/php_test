@@ -27,4 +27,21 @@ file { "/etc/php.ini":
   mode => 0644,
 }
 
+package{ "php-pear":
+  ensure => present,
+  require => Class[php],
+}
+
+exec{ "pear-autodiscover":
+  command => "pear config-set auto_discover 1",
+  require => Package[php-pear],
+  path => $path,
+}
+
+exec{ "install-phpunit":
+  command => "pear install pear.phpunit.de/PHPUnit",
+  require => [Exec[pear-autodiscover],Package[php-pear]],
+  path => $path,
+}
+
 Class[remi] -> Class[php] -> File["/etc/php.ini"]

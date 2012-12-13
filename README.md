@@ -14,5 +14,5 @@ To work on this project you should:
  * cd to your copy
  * run vagrant up
  * ssh into the machine
- * cd /vagrant/task001
+ * cd /vagrant/tasks/001
  * php test.php
