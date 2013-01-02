@@ -14,3 +14,14 @@ What they need from you is a library that implements the broadcasting of
 messages to everyone in a chat room.  Once the message gets sent back to the
 recipient objects their application will handle the actual network IO.
 
+Structure
+---------
+
+The team in charge of building the final application has put together some
+pseudo-code to express how they would like to interact with your library and
+which features they will need. Their expectations can be found in
+test/ChatTest.php.
+
+The team expects you to add some additional tests for the specific objects you
+end up using as part of your design, but they have provided the high-level
+acceptance tests for you.
