@@ -18,6 +18,11 @@ $ pascal 10
 1     9    36    84    126   126   84    36     9     1
 ```
 
+Suggestions
+-----------
+
+I found it very helpful to create smaller unit tests along the way rather than just using the top-level tests provided. I added tests for things like making sure was generating the rows of numbers correctly before I bothered doing any sort of formatting.  It helped to break up the task into smaller chunks.
+
 Running the Test
 ----------------
 
