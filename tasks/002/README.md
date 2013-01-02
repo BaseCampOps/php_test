@@ -25,3 +25,10 @@ test/ChatTest.php.
 The team expects you to add some additional tests for the specific objects you
 end up using as part of your design, but they have provided the high-level
 acceptance tests for you.
+
+Running the Test
+----------------
+
+* $ vagrant ssh
+* $ cd /vagrant/tasks/003
+* $ phpunit --colors test
