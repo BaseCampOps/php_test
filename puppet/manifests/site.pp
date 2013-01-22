@@ -6,6 +6,13 @@ package { "git":
   ensure => present,
 }
 
+file { "/var/www":
+  ensure => directory,
+  owner => "apache",
+  group => "apache",
+  mode => 0755",
+}
+
 file{ "/var/www/sites":
   ensure => directory,
   owner => "apache",
